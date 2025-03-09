@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url(img/background.jpg);
+
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            width: 90%;
+            height: 80%;
+            background: #fff;
+            display: flex;
+        }
+
+        .col {
+            width: 35%;
+            height: 100%;
+            border-right: 2px solid grey;
+            /* border: 2px solid blue; */
+
+
+        }
+
+        .row .col:nth-child(2) {
+            width: 65%;
+            background-image: url(img/woman.jpg);
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 90%;
+            height: 36px;
+            margin-bottom: 1rem;
+            outline: none;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-left: 1rem;
+        }
+
+        p {
+            margin-left: 1rem;
+        }
+
+        #button {
+            background: plum;
+            border: 1px solid plum;
+            color: #000;
+            transition: 0.5s;
+            width: 92%;
+            border-radius: 5px;
+        }
+
+        #button:hover {
+            background: purple;
+            color: white;
+            cursor: pointer;
+        }
+
+        #checkbox {
+            height: 10px;
+            width: auto;
+        }
+
+        .check {
+            display: flex;
+            width: 90%;
+            /* border: 2px solid red; */
+            /* justify-content: center; */
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Login</h1>
+                <p>Don't have an account? <a href="">Signup</a></p>
+                <form action="">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="password" name="Enter password" id="" placeholder="Enter password">
+                    <input type="submit" value="Login" id="button">
+                    <div class="check">
+                        <input type="checkbox" name="" id="checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
